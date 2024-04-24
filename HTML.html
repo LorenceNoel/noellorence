@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="html_styles.css" />
+
+    <title>FINAL PROJECT - TECH1101</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="https://www.instagram.com/noellorenceg">@noellorenceg</a>
+        </div>
+        <ul class="navigations">
+            <li class="hideOnMobile"><a href="home.html">HOME</a></li>
+            <li class="hideOnMobile">
+                <a class="html-btn" href="HTML.html">HTML</a>
+            </li>
+            <li class="hideOnMobile"><a href="cascading.html">CSS</a></li>
+            <li class="hideOnMobile"><a href="javascript.html">JAVASCRIPT</a></li>
+            <li class="hideOnMobile" id="navButton">
+                <button id="navButton" onclick="openSideBar()">
+                    <i class="bx bx-menu"></i>
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="sidebar">
+        <div onclick="hideSideBar()" class="xBtn">
+            <i class="bx bx-x"></i>
+        </div>
+        <ul class="navigations">
+            <li><a class="home-btn" href="home.html">HOME</a></li>
+            <li><a href="HTML.html">HTML</a></li>
+            <li><a href="cascading.html">CSS</a></li>
+            <li><a href="javascript.html">JAVASCRIPT</a></li>
+        </ul>
+    </div>
+
+    <div class="titlepage">
+        <h1><span class="blur"></span>HTML Cheat Sheet</h1>
+    </div>
+
+    <div class="container1">
+        <div class="card">
+            <i id="HTML" class="bx bxs-file-html"></i>
+            <h2>HTML</h2>
+            <p>
+                Hyper Text Markup Language is a markup language used to create and
+                structure web pages on the internet. HTML also is the backbone of
+                website design and function. It provides a structure for web pages
+                that allows browsers to understand and display the content on the
+                page.
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="sidebarr">
+            <ul class="how-to-list">
+                <li>
+                    <a href="#how-to1"><i id="xIcon" class="bx bx-x"></i>Creating Custom Data
+                        Attributes</a>
+                </li>
+                <li>
+                    <a href="#how-to2"><i id="xIcon" class="bx bx-x"></i>Using HTML5 Canvas for Dynamic
+                        Graphics</a>
+                </li>
+                <li>
+                    <a href="#how-to3"><i id="xIcon" class="bx bx-x"></i>Implementing Web Components</a>
+                </li>
+                <li>
+                    <a href="#how-to4"><i id="xIcon" class="bx bx-x"></i>Embedding Interactive Maps with
+                        &lt;iframe&gt;</a>
+                </li>
+                <li>
+                    <a href="#how-to5"><i id="xIcon" class="bx bx-x"></i>Creating Dynamic Tables with
+                        &lt;template&gt;</a>
+                </li>
+                <li>
+                    <a href="#how-to6"><i id="xIcon" class="bx bx-x"></i>Implementing Drag and Drop File
+                        Upload</a>
+                </li>
+                <li>
+                    <a href="#how-to7"><i id="xIcon" class="bx bx-x"></i>Implementing HTML5
+                        Geolocation</a>
+                </li>
+                <li>
+                    <a href="#how-to8"><i id="xIcon" class="bx bx-x"></i>Embedding Audio and Video with
+                        &lt;audio&gt; and &lt;video&gt;&lt;/video&gt;</a>
+                </li>
+                <li>
+                    <a href="#how-to9"><i id="xIcon" class="bx bx-x"></i>Creating Responsive Images with
+                        srcset</a>
+                </li>
+                <li>
+                    <a href="#how-to10"><i id="xIcon" class="bx bx-x"></i>Using &lt;details&gt; and
+                        &lt;summary&gt; for Expandable Content
+                    </a>
+                </li>
+                <li>
+                    <a href="#how-to11"><i id="xIcon" class="bx bx-x"></i>Implementing Microdata with
+                        Schema.org
+                    </a>
+                </li>
+                <li>
+                    <a href="#how-to12"><i id="xIcon" class="bx bx-x"></i>Creating Progress Bars with
+                        &lt;progress&gt;</a>
+                </li>
+                <li>
+                    <a href="#how-to13"><i id="xIcon" class="bx bx-x"></i>Implementing Native HTML5 Drag
+                        and Drop</a>
+                </li>
+                <li>
+                    <a href="#how-to14"><i id="xIcon" class="bx bx-x"></i>Creating Tabbed Navigation
+                    </a>
+                </li>
+                <li>
+                    <a href="#how-to15"><i id="xIcon" class="bx bx-x"></i>Implementing Accessibility with
+                        ARIA Roles</a>
+                </li>
+            </ul>
+        </div>
+
+        <main>
+            <div class="sample" id="how-to1">
+                <h2>Creating Custom Data Attributes</h2>
+                <p>
+                    Use custom data attributes to store additional information about
+                    HTML elements. html Copy code
+                    <code>&lt;div&gt; id="product" data-product-id="12345"
+							data-category="electronics">&lt;/div&gt;</code>
+                </p>
+            </div>
+
+            <div class="sample" id="how-to2">
+                <h2>Using HTML5 Canvas for Dynamic Graphics</h2>
+                <p>
+                    Utilize the &lt;canvas&gt; element to draw graphics, animations, or
+                    interactive content dynamically.
+                    <code>&lt;canvas id="myCanvas" width="200"
+							height="100"&gt;&lt;/canvas&gt;</code>
+                </p>
+            </div>
+
+            <div class="sample" id="how-to3">
+                <h2>Implementing Web Components</h2>
+                <p>
+                    Define reusable custom HTML elements with encapsulated styles and
+                    functionality.
+                    <code>&lt;my-custom-element&gt;&lt;/my-custom-element&gt; </code>
+                </p>
+            </div>
+
+            <div class="sample" id="how-to4">
+                <h2>
+                    Embed interactive maps from services like Google Maps using
+                    &lt;iframe&gt; tags.
+                </h2>
+                <p>
+                    <code>&lt;iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022..."&gt;&lt;/iframe&gt;
+						</code>
+                </p>
+            </div>
+
+            <div class="sample" id="how-to5">
+                <h2>
+                    Use the &lt;template&gt; element to define table row templates and
+                    generate dynamic tables with JavaScript.
+                </h2>
+                <p>
+                    <code>&lt;table&gt;<br />
+							&nbsp;&nbsp;&lt;tbody id="tableBody"&gt;<br />
+							&nbsp;&nbsp;&nbsp;&nbsp; &lt;template id="rowTemplate"&gt;<br />
+							&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;/td&gt;<br />
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;/td&gt;<br />
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
+							&nbsp;&nbsp;&nbsp;&nbsp;&lt;/template&gt;<br />
+							&nbsp;&nbsp;&lt;/tbody&gt;<br />
+							&lt;/table&gt;</code>
+                </p>
+            </div>
+
+            <div class="sample" id="how-to6">
+                <h2>Implementing Drag and Drop File Upload</h2>
+                <p>
+                    <span class="blur"></span>Allow users to drag and drop files
+                    directly into the browser for uploading.
+                    <code>&lt;div id="dropZone" ondrop="dropHandler(event)"
+							ondragover="dragOverHandler(event)"&gt;&lt;/div&gt;
+						</code>
+                </p>
+            </div>
+
+            <div class="sample" id="how-to7">
+                <h2>Implementing HTML5 Geolocation</h2>
+                <p>
+                    Utilize HTML5 Geolocation API to retrieve the user's geographical
+                    location.
+                    <code>&lt;button onclick="getLocation()"&gt;Get Location&lt;/button&gt;
+						</code>
+                </p>
+            </div>
+
+            <div class="sample" id="how-to8">
+                <h2>
+                    Embedding Audio and Video with &lt;audio&gt; and &lt;video&gt;
+                </h2>
+                <p>
+                    Embed audio and video files directly into web pages with native
+                    HTML5 elements. <br /><code>&lt;audio controls&gt;<br />
+							&nbsp;&nbsp;&nbsp;&lt;source src="audio.mp3"
+							type="audio/mpeg"&gt;<br />
+							&lt;/audio&gt;<br /><br />
+							&lt;video controls&gt;<br />
+							&nbsp;&nbsp;&nbsp;&lt;source src="video.mp4"
+							type="video/mp4"&gt;<br />
+							&lt;/video&gt;</code>
+                </p>
+            </div>
+
+            <div class="sample" id="how-to9">
+                <h2>Creating Responsive Images with srcset</h2>
+                <p>
+                    Serve different image files based on the device's screen size and
+                    resolution.
+                    <code>&lt;img src="small.jpg" srcset="medium.jpg 1000w, large.jpg
+							2000w" alt="Responsive Image"&gt;
+						</code>
+                </p>
+            </div>
+
+            <div class="sample" id="how-to10">
+                <h2>
+                    Using &lt;details&gt; and &lt;summary&gt; for Expandable Content
+                </h2>
+                <p>
+                    Description: Create collapsible sections of content that can be
+                    expanded or collapsed by the user. <br /><br /><code>
+							&lt;details&gt;<br />
+							&nbsp;&nbsp;&nbsp; &lt;summary&gt;Click to
+							expand&lt;/summary&gt;<br />
+							&nbsp;&nbsp;&nbsp; &lt;p&gt;Hidden content here...&lt;/p&gt;<br />
+							&lt;/details&gt;</code>
+                </p>
+            </div>
+
+            <div class="sample" id="how-to11">
+                <h2>Implementing Microdata with Schema.org</h2>
+                <p>
+                    Add semantic markup to HTML to provide additional context for search
+                    engines. <br /><br />
+                    &lt;div itemscope itemtype="http://schema.org/Person"&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&lt;span itemprop="name"&gt;John
+                    Doe&lt;/span&gt;<br />
+                    &lt;/div&gt;
+                </p>
+            </div>
+
+            <div class="sample" id="how-to12">
+                <h2>Creating Progress Bars with &lt;progress&gt;</h2>
+                <p>
+                    Display the progress of a task or process with the &lt;progress&gt;
+                    element. <br /><br /><code>&lt;progress value="70" max="100"&gt;&lt;/progress&gt;
+						</code>
+                </p>
+            </div>
+
+            <div class="sample" id="how-to13">
+                <h2>
+                    Implementing Native HTML5 Drag and Drop <span class="blur"></span>
+                </h2>
+                <p>
+                    Use native HTML5 drag and drop API to enable dragging and dropping
+                    of elements within a web page. <br /><br />
+                    <code>&lt;div draggable="true" ondragstart="dragStart(event)"&gt;Drag
+							me!&lt;/div&gt;<br /> </code><code>&lt;div ondrop="drop(event)"
+							ondragover="allowDrop(event)"&gt;Drop here!&lt;/div&gt;
+						</code>
+                </p>
+            </div>
+
+            <div class="sample" id="how-to14">
+                <h2>
+                    Creating Tabbed Navigation with &lt;details&gt; and &lt;summary&gt;
+                </h2>
+                <p>
+                    Implement tabbed navigation using &lt;details&gt; and
+                    &lt;summary&gt; elements. <br /><br />
+                    <code>
+							&lt;details open&gt;<br />
+							&nbsp;&nbsp;&nbsp;&lt;summary&gt;Tab 1&lt;/summary&gt;<br />
+							&nbsp;&nbsp;&nbsp;&lt;p&gt;Tab 1 content here...&lt;/p&gt;<br />
+							&lt;/details&gt;</code>
+                </p>
+            </div>
+
+            <div class="sample" id="how-to15">
+                <h2>Implementing Accessibility with ARIA Roles and Attributes</h2 class="blur">
+                <p>
+                    Improve accessibility by adding ARIA roles and attributes to HTML
+                    elements.
+                    <code>&lt;button role="button" aria-label="Close"&gt;X&lt;/button&gt;
+						</code>
+                </p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

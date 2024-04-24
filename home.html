@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+
+    <title>FINAL PROJECT - TECH1101</title>
+</head>
+
+<body>
+    <section id="banner">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="https://www.instagram.com/noellorenceg">@noellorenceg</a>
+            </div>
+            <ul class="navigations">
+                <li class="hideOnMobile">
+                    <a class="home-btn" href="home.html">HOME</a>
+                </li>
+                <li class="hideOnMobile"><a href="HTML.html">HTML</a></li>
+                <li class="hideOnMobile"><a href="cascading.html">CSS</a></li>
+                <li class="hideOnMobile"><a href="javascript.html">JAVASCRIPT</a></li>
+                <li class="hideOnMobile" id="navButton">
+                    <button id="navButton" onclick="openSideBar()">
+                        <i class="bx bx-menu"></i>
+                    </button>
+                </li>
+            </ul>
+            </div>
+        </nav>
+
+
+        <div class="sidebar">
+            <div onclick="hideSideBar()" class="xBtn">
+                <i class="bx bx-x"></i>
+            </div>
+            <ul class="navigations">
+                <li><a href="home.html">HOME</a></li>
+                <li><a class="HTML-btn" href="HTML.html">HTML</a></li>
+                <li><a href="cascading.html">CSS</a></li>
+                <li><a href="javascript.html">JAVASCRIPT</a></li>
+            </ul>
+        </div>
+
+        <div class="bannerContent">
+            <h2>Hi! I'm <span class="NG">Noel Gonzales</span></h2>
+            <p>
+                I'm an experienced sales professional turned
+                <span class="SD">Software Developer</span><span class="blur"></span><br>Let's work together!
+            </p>
+            <button id="getInTouchBtn">Get in touch!</button>
+            <a href="Noel Gonzales Resume.pdf" download="Noel_Gonzales_Resume.pdf" class="inquireBTN">
+                Get my Resume</a>
+        </div>
+    </section>
+
+    <div id="contactDetails" class="contact-details-popup">
+        <div class="contact-details-content">
+            <span class="close-btn" onclick="toggleContactDetails()">&times;</span>
+            <h2>Contact Details</h2>
+            <p>Name: Noel Lorence Gonzales</p>
+            <p>Email: noellorenceg@gmail.com</p>
+            <p>Phone: +1 (825) 734 2050</p>
+        </div>
+    </div>
+
+    <main>
+        <div id="timeline" class="cardContainer">
+            <div class="card1" id="card">
+                <h3>Early Careers</h3>
+                <i id="icons" class="bx bxs-briefcase-alt-2"></i>
+                <p>
+                    One of the first jobs I landed was face-to-face sales. Then I
+                    resigned wanting to explore other aspects of sales. Then Lamudi
+                    Philippines recruited me and there I learned to do telephone sales.
+                    I stayed there for a year then quit and came back again as a Team
+                    Leader and have stayed in there for more than 2 years. It is one of
+                    the most memorable experiences where I learned so much not just
+                    selling but also an opportunity to manage people. An opportunity has
+                    opened and I was Sprout Solutions which is a SaaS company that
+                    provides automated solutions for HRs - stayed the for a year until I
+                    left for Canada.
+                </p>
+            </div>
+            <div class="timeline-line"></div>
+
+            <div class="card2" id="card">
+                <h3>Why did I switch?</h3>
+                <i id="icons" class="bx bxs-right-arrow-square"></i>
+                <p>
+                    It was that we had an opportunity to study in Canada. And with the
+                    influence of my two brothers who are both successful software
+                    engineers in the Philippines sparked my interest in pursuing
+                    software development. An opportunity to work with one of the best
+                    tech companies in my country made me realize how impactful
+                    technology advancement is, it promotes efficiency and accuracy and
+                    then the question pop up in my head on how can someone make such
+                    precise and effective applications.
+                </p>
+            </div>
+            <div class="timeline-line"></div>
+
+            <div class="card3" id="card">
+                <h3>As a student</h3>
+                <i id="icons" class="bx bxs-book-content"></i>
+                <p>
+                    As a student again? Of course I thought that I was done with this
+                    phase of my life, it never crossed my mind that I was going to be in
+                    this position again. It is a rollercoaster of being fun and tiring
+                    at the same time to be a student. More so you have to adjust to a
+                    world that you have no idea about or are used to. But, I already did
+                    it right? I already have a full experience on how to become a
+                    student and all I have to do is to bring back my learner's mindset.
+                    And, so I focus, remain patient, and become a sponge. It's going to
+                    be hard at first but I know that this will all be worth it!.
+                </p>
+            </div>
+            <div class="timeline-line"></div>
+
+            <div class="card4" id="card">
+                <h3>Soon!</h3>
+                <i id="icons" class="bx bxs-message-detail"></i>
+                <p>
+                    I'm going to be in a cozy room, sitting with my laptop, typing away.
+                    Mastering software development, one line of code at a time. With
+                    each project completed, I'm gonna build my confidence, and with
+                    proper determination to succeed I'm going to make it. My goal is
+                    simple and was clear: to become a skilled developer and create
+                    software that would make a difference in people's lives.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="https://www.instagram.com/noellorenceg">@noellorenceg<span class="blur"></span></a>
+            </div>
+            <ul class="footer-links">
+                <li><a class="social-icon" href="#banner">Home</a></li>
+                <li><a class="social-icon" href="#timeline">About</a></li>
+                <li><a class="social-icon" href="#" id="contactLink">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/DLegendaryLorence" class="social-icon"><i class="bx bxl-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/noellorence" class="social-icon"><i
+                    class="bx bxl-linkedin-square"></i></a>
+            <a href="https://www.instagram.com/noellorenceg" class="social-icon"><i class="bx bxl-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

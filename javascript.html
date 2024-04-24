@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="javascript.css" />
+
+    <title>FINAL PROJECT - TECH1101</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="https://www.instagram.com/noellorenceg">@noellorenceg</a>
+        </div>
+        <ul class="navigations">
+            <li class="hideOnMobile"><a href="home.html">HOME</a></li>
+            <li class="hideOnMobile"><a href="HTML.html">HTML</a></li>
+            <li class="hideOnMobile"><a href="cascading.html">CSS</a></li>
+            <li class="hideOnMobile">
+                <a class="javascript-btn" href="javascript.html">JAVASCRIPT</a>
+            </li>
+            <li class="hideOnMobile" id="navButton">
+                <button id="navButton" onclick="openSideBar()">
+                    <i class="bx bx-menu"></i>
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="sidebar">
+        <div onclick="hideSideBar()" class="xBtn">
+            <i class="bx bx-x"></i>
+        </div>
+        <ul class="navigations">
+            <li><a class="home-btn" href="home.html">HOME</a></li>
+            <li><a href="HTML.html">HTML</a></li>
+            <li><a href="cascading.html">CSS</a></li>
+            <li><a href="javascript.html">JAVASCRIPT</a></li>
+        </ul>
+    </div>
+
+    <div class="titlepage">
+        <h1><span class="blur"></span>JAVASCRIPT Cheat Sheet</h1>
+    </div>
+
+    <div class="container1">
+        <div class="card">
+            <i id="javascript" class="bx bxl-javascript"></i>
+            <h2>JAVASCRIPT</h2>
+            <p>
+                JavaScript is a programming language that enables web developers to
+                make websites interactive and dynamic. It allows you to add
+                functionality to web pages, such as responding to user actions (like
+                clicks and keystrokes), manipulating HTML content, and communicating
+                with servers to load or send data without reloading the page. In
+                simpler terms, JavaScript is what makes websites do cool stuff like
+                animations, forms that validate input, and updating content without
+                refreshing the entire page.
+            </p>
+        </div>
+    </div>
+
+    <main>
+        <div class="samples" id="sample1">
+            <h2>Variables</h2>
+            <p>
+                Use variables to store and manipulate data. Remember to use let,
+                const, or var to declare variables, depending on the scope and
+                mutability requirements. <code></code>
+            </p>
+            <p><code>let name = "John";</code></p>
+        </div>
+
+        <div class="samples" id="sample2">
+            <h2>Functions</h2>
+            <p>
+                Functions encapsulate reusable blocks of code. They help improve code
+                organization and maintainability by promoting modularity.
+            </p>
+            <p><code>function greet() { console.log("Hello!"); } </code></p>
+        </div>
+
+        <div class="samples" id="sample3">
+            <h2>onditional Statements</h2>
+            <p>
+                Use if, else if, and else to control the flow of your program based on
+                different conditions. Conditions should evaluate to either true or
+                false.
+            </p>
+            <p>
+                <code>let age = 20; if (age >= 18) { console.log("You are an adult."); }
+						else { console.log("You are a minor."); }
+					</code>
+            </p>
+        </div>
+
+        <div class="samples" id="sample4">
+            <h2>Loops</h2>
+            <p>
+                Loops help you execute code repeatedly. Use for, while, or do-while
+                loops depending on the situation and termination conditions.
+            </p>
+            <p>
+                <code>for (let i = 0; i < 5; i++) { console.log("Count:", i); }
+					</code>
+            </p>
+        </div>
+
+        <div class="samples" id="sample5">
+            <h2>Arrays</h2>
+            <p>
+                Arrays are collections of elements. You can access, modify, and
+                iterate over array elements using various array methods and loop
+                constructs.
+            </p>
+            <p><code>let numbers = [1, 2, 3, 4, 5]; </code></p>
+        </div>
+
+        <div class="samples" id="sample6">
+            <h2>Objects</h2>
+            <p>
+                Objects store data in key-value pairs. They're useful for representing
+                complex data structures and modeling real-world entities.
+            </p>
+            <p><code>let person = { name: "Alice", age: 30, }; </code></p>
+        </div>
+
+        <div class="samples" id="sample7">
+            <h2>Event Handling</h2>
+            <p>
+                Use event listeners to respond to user interactions like clicks,
+                keypresses, or form submissions. Event handling enables interactive
+                web experiences.
+            </p>
+            <p>
+                <code>document.querySelector("button").addEventListener("click",
+						function() { console.log("Button clicked!"); });
+					</code>
+            </p>
+        </div>
+
+        <div class="samples" id="sample8">
+            <h2>DOM Manipulation</h2>
+            <p>
+                Modify HTML elements and their attributes using JavaScript to create
+                dynamic and interactive web pages.
+            </p>
+            <p>
+                <code>document.getElementById("demo").innerHTML = "Hello, World!";
+					</code>
+            </p>
+        </div>
+
+        <div class="samples" id="sample9">
+            <h2>Alerts</h2>
+            <p>
+                Display simple pop-up messages to provide information or prompt the
+                user for action. Use alerts sparingly to avoid disrupting user
+                experience.
+            </p>
+            <p><code>alert("This is an alert!"); </code></p>
+        </div>
+
+        <div class="samples" id="sample10">
+            <h2>Prompt</h2>
+            <p>
+                Get input from users by displaying a dialog box with a text field.
+                Prompt is useful for gathering user input in interactive applications.
+            </p>
+            <p><code>let name = prompt("What is your name?"); </code></p>
+        </div>
+
+        <div class="samples" id="sample11">
+            <h2>Confirm</h2>
+            <p>
+                Display a confirmation dialog box with OK and Cancel buttons. Use
+                confirm dialogs to prompt users for decisions with binary outcomes.
+            </p>
+            <p><code>let confirmation = confirm("Are you sure?"); </code></p>
+        </div>
+
+        <div class="samples" id="sample12">
+            <h2>Timeouts</h2>
+            <p>
+                Execute code after a specified delay. Timeouts are useful for
+                scheduling tasks to occur in the future, like animations or
+                asynchronous operations.
+            </p>
+            <p>
+                <code>setTimeout(function() { console.log("Delayed message"); }, 2000);
+						// 2000 milliseconds = 2 seconds
+					</code>
+            </p>
+        </div>
+
+        <div class="samples" id="sample13">
+            <h2>Intervals</h2>
+            <p>
+                Execute code repeatedly at fixed intervals. Use intervals for tasks
+                that need to be performed periodically, such as updating live data or
+                running background tasks.
+            </p>
+            <p>
+                <code>setInterval(function() { console.log("Interval message"); }, 1000);
+						// 1000 milliseconds = 1 second
+					</code>
+            </p>
+        </div>
+
+        <div class="samples" id="sample14">
+            <h2>Error Handling</h2>
+            <p>
+                Use try, catch, and finally blocks to handle exceptions and gracefully
+                recover from errors in your code. Error handling improves the
+                robustness of your applications.
+            </p>
+            <p>
+                <code>try { // Code that might throw an error } catch(error) {
+						console.log("An error occurred:", error.message); }
+					</code>
+            </p>
+        </div>
+
+        <div class="samples" id="sample15">
+            <h2>AJAX</h2>
+            <p>
+                Use AJAX to make asynchronous HTTP requests to servers. Fetch data
+                from APIs or send data to servers without reloading the entire web
+                page, providing a seamless user experience.
+            </p>
+            <p>
+                <code>fetch("https://api.example.com/data") .then(response =>
+						response.json()) .then(data => console.log(data)) .catch(error =>
+						console.error("Error fetching data:", error));
+					</code>
+            </p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

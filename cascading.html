@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="cascading.css">
+    <title>FINAL PROJECT - TECH1101</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="https://www.instagram.com/noellorenceg">@noellorenceg</a>
+        </div>
+        <ul class="navigations">
+            <li class="hideOnMobile"><a href="home.html">HOME</a></li>
+            <li class="hideOnMobile"><a href="HTML.html">HTML</a></li>
+            <li class="hideOnMobile"><a class="css-btn" href="cascading.html">CSS</a></li>
+            <li class="hideOnMobile"><a href="javascript.html">JAVASCRIPT</a></li>
+            <li class="hideOnMobile" id="navButton"><button id="navButton" onclick="openSideBar()">
+                    <i class='bx bx-menu'></i>
+                </button>
+            </li>
+        </ul>
+    </nav>
+    <div class="sidebar">
+        <div onclick="hideSideBar()" class="xBtn">
+            <i class='bx bx-x'></i>
+        </div>
+        <ul class="navigations">
+            <li><a class="home-btn" href="home.html">HOME</a></li>
+            <li><a href="HTML.html">HTML</a></li>
+            <li><a href="cascading.html">CSS</a></li>
+            <li><a href="javascript.html">JAVASCRIPT</a></li>
+        </ul>
+    </div>
+    <div class="titlepage">
+        <h1><span class="blur"></span>CSS Cheat Sheet</h1>
+    </div>
+    <div class="container1">
+        <div class="card">
+            <i id="CSS" class='bx bxs-file-css'></i>
+            <h2>CSS</h2>
+            <p>Cascading Style Sheets. It's a style sheet language used for describing the presentation of a document
+                written in
+                markup languages like HTML. CSS describes how elements should be displayed on a screen, in print, or in
+                other media.
+                It allows web developers to control the layout, colors, fonts, and other visual aspects of web pages,
+                making them
+                more visually appealing and user-friendly.
+            </p>
+        </div>
+    </div>
+    <main>
+        <div class="container2">
+            <div class="boxes box1">
+                <h2>CSS Selectors</h2>
+                <p>This cheat sheet provides a quick reference for CSS selectors, which are patterns used to select
+                    and
+                    style elements in HTML documents. It includes examples of commonly used selectors such as tag
+                    selectors
+                    <code>&lt;p&gt;</code>, class selectors <code>&lt;.my-class&gt;</code>, and ID selectors
+                    <code>&lt;#my-id&gt;</code>,
+                    along with their corresponding CSS
+                    rules.
+                </p>
+            </div>
+            <div class="boxes box2">
+                <h2>CSS Properties</h2>
+                <p>Lists essential CSS properties that developers frequently use to style HTML elements. It includes
+                    properties like color, font-size, background-image, padding, margin, etc. Each property is
+                    accompanied
+                    by its syntax and a brief description of its purpose.
+                </p>
+            </div>
+            <div class="boxes box3">
+                <h2>CSS Units</h2>
+                <p>Provides a reference for different units of measurement used in CSS, such as pixels
+                    <code>&lt;px&gt;</code>, percentages
+                    <code>&lt;%&gt;</code>, em <code>&lt;em&gt;</code>, rem <code>&lt;rem&gt;</code>, and more. It
+                    helps
+                    developers understand how to specify sizes and distances
+                    in
+                    their CSS stylesheets.
+                </p>
+            </div>
+            <div class="boxes box4">
+                <h2>CSS Flexbox</h2>
+                <p>Focuses on CSS Flexbox layout properties, which are used for creating flexible and responsive
+                    layouts.
+                    It includes properties like display: flex, flex-direction, justify-content, align-items, etc.
+                    Each
+                    property is explained with examples to illustrate their usage.
+                </p>
+            </div>
+            <div class="boxes box5">
+                <h2>CSS Grid</h2>
+                <p>Covers CSS Grid layout properties, which enable developers to create complex grid-based layouts
+                    in a
+                    more structured way. It includes properties like display: grid, grid-template-columns,
+                    grid-template-rows, grid-column, grid-row, etc. Examples demonstrate how to define grid
+                    containers
+                    and
+                    place items within them.
+                </p>
+            </div>
+            <div class="boxes box6">
+                <h2>CSS Animations</h2>
+                <p>Focuses on CSS animation properties and keyframes, which allow developers to create animations
+                    directly
+                    in CSS without using JavaScript or external libraries. It includes examples of defining
+                    keyframes
+                    <code>@keyframes</code>, animation properties <code>animation-name, animation-duration,
+                  animation-timing-function,
+                  etc.</code>,
+                    and applying animations to elements.
+                </p>
+            </div>
+            <div class="boxes box7">
+                <h2>CSS Colors</h2>
+                <p>Provides a reference for specifying colors in CSS using various formats such as hexadecimal
+                    </code>#RRGGBB</code>,
+                    <code>RGB (rgb()), RGBA (rgba()), color names, and HSL (hsl()).</code> It also includes examples
+                    of
+                    color
+                    manipulation functions like <code>lighten(), darken(), saturate(), etc.</code>
+                </p>
+            </div>
+            <div class="boxes box8">
+                <h2>CSS Transitions</h2>
+                <p>Covers CSS transition properties, which enable smooth transitions between different property
+                    values
+                    <code>e.g., color, size, position</code> over a specified duration. It includes properties like
+                    transition-property, transition-duration, transition-timing-function, and transition-delay,
+                    along
+                    with
+                    examples of their usage.
+                </p>
+            </div>
+            <div class="boxes box9">
+                <h2>CSS Pseudo-classes</h2>
+                <p>Explains CSS pseudo-classes, which are used to define special states of HTML elements that are
+                    not
+                    represented by the document structure. It includes examples of commonly used pseudo-classes like
+                    <code>:hover,
+                  :active, :focus, :nth-child(), etc.,</code> along with their syntax and usage.
+                </p>
+            </div>
+            <div class="boxes box10">
+                <h2>CSS Pseudo-elements</h2>
+                <p>Focuses on CSS pseudo-elements, which allow developers to style specific parts of an element's
+                    content
+                    without adding extra HTML markup. It includes examples of pseudo-elements like <code>::before, ::after,
+                  ::first-line, ::first-letter, etc.,</code> along with practical use cases.
+                </p>
+            </div>
+            <div class="boxes box11">
+                <h2>CSS Resets</h2>
+                <p>Introduces CSS resets, which are stylesheets used to reset the default styles applied by browsers
+                    to
+                    HTML elements. It includes popular resets like Eric Meyer's Reset, Normalize.css, and others,
+                    along
+                    with their implementation.
+                </p>
+            </div>
+            <div class="boxes box12">
+                <h2>CSS Media Queries</h2>
+                <p>Covers CSS media queries, which allow developers to apply different styles based on the
+                    characteristics
+                    of the device or viewport. It includes examples of media query syntax for common use cases like
+                    targeting screen sizes, orientation <code>landscape/portrait</code>, and device features <code>resolution, aspect
+                  ratio, etc..</code>
+                </p>
+            </div>
+            <div class="boxes box13">
+                <h2>CSS Typography</h2>
+                <p>Focuses on CSS properties related to typography, such as <code>font-family, font-size, font-weight,
+                  line-height, text-align, text-decoration, etc.</code> It includes examples of styling text elements
+                    to
+                    achieve
+                    desired typography effects.
+                </p>
+            </div>
+            <div class="boxes box14">
+                <h2>CSS Box Model</h2>
+                <p>Explains the CSS box model, which describes how elements are rendered on a web page in terms of
+                    <code>content
+                  area, padding, border, and margin.</code> It includes examples of setting padding, margin, border
+                    properties,
+                    and how they affect the layout of elements.
+                </p>
+            </div>
+            <div class="boxes box15">
+                <h2>CSS Specificity</h2>
+                <p>Clarifies CSS specificity, which determines which CSS rule is applied to an element when multiple
+                    rules
+                    conflict. It includes examples and explanations of specificity rules based on selector types
+                    <code>inline
+                  styles, IDs, classes, elements</code> and how to calculate specificity values.
+                </p>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
